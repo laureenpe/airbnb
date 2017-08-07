@@ -11,6 +11,8 @@ body{
 /*Pictures*/
 .pictures{
     position: relative;
+    margin: 0;
+    height: 400px;
 img{
     height: 30vh;
     padding-left: 20px;
@@ -26,7 +28,9 @@ img{
 
 
 }
-
+.slide{
+    margin: 0;
+}
 .fa-heart{
     margin-top: 0;
 }

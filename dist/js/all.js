@@ -20258,6 +20258,7 @@ var res = {"search_results":[{"listing":{"cost":6500,"bathrooms":1.0,"bedrooms":
 
 $(document).ready(function () {
     loadFiles();
+     $('select').material_select('destroy');
 });
 
 
@@ -20270,7 +20271,7 @@ function loadFiles() {
     res.search_results.forEach(function (el) {
         console.log(el.listing.reviews_count);
         html += `  
-                    <div class= "col s6 m6 l6" >
+                    <div class= "col s12 m6 l6" >
                             <div class= "slide">
                                 <img  id="photo`+ el.id + `"` + `" src="` + el.listing.thumbnail_url + `"
                                     <i class="fa fa-heart" aria-hidden="true"></i>                        

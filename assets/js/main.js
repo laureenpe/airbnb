@@ -1,5 +1,6 @@
 $(document).ready(function () {
     loadFiles();
+     $('select').material_select('destroy');
 });
 
 

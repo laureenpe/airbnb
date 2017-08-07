@@ -10,7 +10,23 @@ body{
 }
 /*Pictures*/
 .pictures{
+    position: relative;
 img{
-    height: 37vh;
+    height: 30vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
 }
+.fa-star{
+    color: $star_color;
+    
+}
+
+
+}
+
+.fa-heart{
+    margin-top: 0;
 }

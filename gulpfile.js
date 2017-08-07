@@ -6,7 +6,7 @@ var minifyCSS= require('gulp-minify-css');
 var webserver= require('gulp-webserver');
 
 gulp.task('script', function(){
-  return gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/materialize-css/dist/js/materialize.js','assets/js/*.js'])
+   gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/materialize-css/dist/js/materialize.js','assets/js/*.js'])
    .pipe(concat('all.js'))
    .pipe(uglify())
    .pipe(gulp.dest('js/build'))
@@ -20,7 +20,7 @@ gulp.task('style', function(){
   .pipe(gulp.dest('dist/css'));
 });
 gulp.task('webserver', function(){
-  gulp.src(['.../airbnb/'])
+  gulp.src('../airbnb/')
   .pipe(webserver({
       fallback:'index.html',
       livereload:true,

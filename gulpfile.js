@@ -8,8 +8,7 @@ var webserver= require('gulp-webserver');
 gulp.task('script', function(){
    gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/materialize-css/dist/js/materialize.js','assets/js/*.js'])
    .pipe(concat('all.js'))
-   .pipe(uglify())
-   .pipe(gulp.dest('js/build'))
+   .pipe(gulp.dest('dist/js/'))
 });
 
 gulp.task('style', function(){

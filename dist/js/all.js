@@ -20258,7 +20258,8 @@ var res = {"search_results":[{"listing":{"cost":6500,"bathrooms":1.0,"bedrooms":
 
 $(document).ready(function () {
     loadFiles();
-     $('select').material_select('destroy');
+    $('select').material_select();
+
 });
 
 
@@ -20273,7 +20274,7 @@ function loadFiles() {
         html += `  
                     <div class= "col s12 m6 l6" >
                             <div class= "slide">
-                                <img  id="photo`+ el.id + `"` + `" src="` + el.listing.thumbnail_url + `"
+                                <img class="responsive-img" id="photo`+ el.id + `"` + `" src="` + el.listing.thumbnail_url + `"
                                     <i class="fa fa-heart" aria-hidden="true"></i>                        
                             </div>        
                             <div class= "text">
@@ -20291,3 +20292,36 @@ function loadFiles() {
     })
 }
 
+
+var from_$input = $('#input_from').pickadate(),
+    from_picker = from_$input.pickadate('picker')
+
+var to_$input = $('#input_to').pickadate(),
+    to_picker = to_$input.pickadate('picker')
+
+
+// Check if there’s a “from” or “to” date to start with.
+if ( from_picker.get('value') ) {
+  to_picker.set('min', from_picker.get('select'))
+}
+if ( to_picker.get('value') ) {
+  from_picker.set('max', to_picker.get('select'))
+}
+
+// When something is selected, update the “from” and “to” limits.
+from_picker.on('set', function(event) {
+  if ( event.select ) {
+    to_picker.set('min', from_picker.get('select'))    
+  }
+  else if ( 'clear' in event ) {
+    to_picker.set('min', false)
+  }
+})
+to_picker.on('set', function(event) {
+  if ( event.select ) {
+    from_picker.set('max', to_picker.get('select'))
+  }
+  else if ( 'clear' in event ) {
+    from_picker.set('max', false)
+  }
+})

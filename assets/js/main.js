@@ -1,6 +1,7 @@
 $(document).ready(function () {
     loadFiles();
-     $('select').material_select('destroy');
+    $('select').material_select();
+
 });
 
 
@@ -15,7 +16,7 @@ function loadFiles() {
         html += `  
                     <div class= "col s12 m6 l6" >
                             <div class= "slide">
-                                <img  id="photo`+ el.id + `"` + `" src="` + el.listing.thumbnail_url + `"
+                                <img class="responsive-img" id="photo`+ el.id + `"` + `" src="` + el.listing.thumbnail_url + `"
                                     <i class="fa fa-heart" aria-hidden="true"></i>                        
                             </div>        
                             <div class= "text">

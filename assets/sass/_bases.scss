@@ -3,11 +3,7 @@
 *{
     font-family: $body_font;
 }
-body{
-    
-    
-    
-}
+
 /*Pictures*/
 .pictures{
     position: relative;
@@ -24,7 +20,6 @@ body{
     
 }
 
-
 }
 .slide{
     margin: 0;
@@ -33,7 +28,7 @@ body{
     margin-top: 0;
 }
 .datapictures{
-    fieldset {
+  fieldset {
   margin: 1em 0;
   border: 0;
   padding: 0;
@@ -188,7 +183,13 @@ input[type=text]:not(.browser-default) {
 /*Map*/
 
 #map {
-        height: 100vh;
+    height: 100vh;
+    z-index: 3;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    top: 0px;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {

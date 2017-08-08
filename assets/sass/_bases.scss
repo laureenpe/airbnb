@@ -39,6 +39,16 @@ body{
   padding: 0;
   position: relative;
 }
+.container-profile{
+    position: relative;
+    top: -32px;
+    left: 63%;
+}
+.circl{
+    border-radius: 50%;
+    width: 18%;
+    border: 2px solid white;
+}
 input {
   font-size: 1em;
   font-family: sans-serif;
@@ -83,7 +93,7 @@ a:hover {
     fieldset{
         font-size: 10px;
         border: 1px solid black;
-        width: 157%;
+        width: 257%;
     }
    
     
@@ -112,7 +122,7 @@ input[type=text]:not(.browser-default) {
     color: initial;
     position: absolute;
     right: 0px;
-    left: 300%;
+    left: 100%;
     top: 0;
     bottom: 0;
     height: 10px;
@@ -173,6 +183,7 @@ input[type=text]:not(.browser-default) {
     transition: .3s ease-out;
 }
 
+
 /* NAVBAR */
 
 
@@ -212,3 +223,98 @@ nav ul li a img{
 nav ul a:hover {
     background-color: white;
 }
+
+/*Hide section*/
+
+/*Map*/
+
+#map {
+        height: 100vh;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        font-size: 12px;
+      }
+      #map {
+        width: 440px;
+        top: 49px;
+      }
+      #listing {
+        position: absolute;
+        width: 200px;
+        height: 470px;
+        overflow: auto;
+        left: 1258px;
+        top: 53px;
+        cursor: pointer;
+        overflow-x: hidden;
+      }
+      #findhotels {
+        position: absolute;
+        text-align: right;
+        width: 100px;
+        font-size: 14px;
+        padding: 4px;
+        z-index: 5;
+        top: 20px;
+        background-color: #fff;
+      }
+      #locationField {
+        font-size: 20px;
+        position: absolute;
+        width: 190px;
+        height: 25px;
+        left: 108px;
+        top: 0px;
+        z-index: 5;
+        background-color: #fff;
+      }
+      #controls {
+        position: absolute;
+        left:72%;  
+        width: 140px;
+        top: 20px;
+        z-index: 5;
+        background-color: #fff;
+      }
+      #autocomplete {
+        width: 100%;
+        font-size: 18px;
+        border: 1px solid black;
+      }
+      #country {
+        width: 100%;
+      }
+      .placeIcon {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+      }
+      .hotelIcon {
+        width: 24px;
+        height: 24px;
+      }
+      #resultsTable {
+        border-collapse: collapse;
+        width: 240px;
+      }
+      #rating {
+        font-size: 13px;
+        font-family: Arial Unicode MS;
+      }
+      .iw_table_row {
+        height: 18px;
+      }
+      .iw_attribute_name {
+        font-weight: bold;
+        text-align: right;
+      }
+      .iw_table_icon {
+        text-align: right;
+      }
+

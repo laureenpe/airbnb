@@ -34,3 +34,4 @@ function loadFiles() {
     })
 }
 
+//Function to filters

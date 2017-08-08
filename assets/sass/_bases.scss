@@ -172,3 +172,43 @@ input[type=text]:not(.browser-default) {
     -webkit-transition: .3s ease-out;
     transition: .3s ease-out;
 }
+
+/* NAVBAR */
+
+
+nav {
+    color: black;
+    background-color: white;
+    width: 100%;
+}
+nav ul a{
+  color: black;
+}
+nav i{
+  margin-top: -12px;
+  color: black;
+}
+li .nav-wrapper{
+  margin-top: 4%;
+}
+div.input-field{
+  border: 1px solid #dadce6;
+  height: 35px;
+
+}
+div.nav-wrapper{
+  width: 170px; 
+}
+nav .input-field label i{
+  color: black;
+  margin-top: 20%;
+}
+nav .input-field label.active i {
+    color: black;
+}
+nav ul li a img{
+  margin-top: 35%;
+}
+nav ul a:hover {
+    background-color: white;
+}

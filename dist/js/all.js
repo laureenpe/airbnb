@@ -20356,6 +20356,15 @@ function loadFilesIndex() {
 
     })
 }
+
+/* FILTROS OCULTAR - MOSTRAR */
+
+$('#filtros-show').hide();
+
+$('#filtros-hide').on('click',function(){
+    $('#filtros-show').show();
+    
+});
 var map, places, infoWindow;
       var markers = [];
       var autocomplete;

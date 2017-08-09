@@ -68,3 +68,12 @@ function loadFilesIndex() {
 
     })
 }
+
+/* FILTROS OCULTAR - MOSTRAR */
+
+$('#filtros-show').hide();
+
+$('#filtros-hide').on('click',function(){
+    $('#filtros-show').show();
+    
+});

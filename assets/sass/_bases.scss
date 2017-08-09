@@ -118,6 +118,12 @@ input[type=text]:not(.browser-default) {
 .input-field {
     left: 13px;
     }
+  .nav-wrapper .input-field input[type=search] {
+    height: inherit;
+    box-shadow: none;
+    padding-left: 0;
+}
+
 /*Rooms*/
  form p {
     margin-bottom: 10px;
@@ -210,27 +216,19 @@ color: #484848;
 /*Map*/
 
 #map {
-    height: 50vh;
+    height: 100vh;
     z-index: 3;
     padding: 0px;
     border-width: 0px;
     margin: 0px;
+    width: 1000px;
+}
+      
+  table {
+    font-size: 12px;
       }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      table {
-        font-size: 12px;
-      }
-      #map {
-        width: 440px;
-        top: 20px;
-      }
-      #listing {
-       
+     
+    #listing { 
       position: absolute;
       width: 200px;
       height: 612px;
@@ -241,9 +239,6 @@ color: #484848;
       overflow-x: hidden;
       }
       
-      #findhotels {
-        
-      }
       #locationField {
         font-size: 20px;
         position: absolute;

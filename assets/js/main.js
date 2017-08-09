@@ -3,14 +3,22 @@ $(document).ready(function () {
     loadFilesIndex();
     $("#btn-save").click(saveToLocalStorage); //guarda a local storage
     getFromLocalStorage(); //obtener local storage
+    $('#home').click(onClickInput);//listerne buscador casa
     $('select').material_select();
+  /* FILTROS OCULTAR - MOSTRAR */
+
+$('#filtros-show').hide();
+
+$('#filtros-hide').on('click',function(){
+    $('#filtros-show').show();
+    
+});
 
 });
 
 function loadFiles() {
     var html = "";
     res.search_results.forEach(function (el) {
-        console.log(el);
         html += `  
                     <div class= "col s12 m6 l6" >
                             <div class= "slide">
@@ -39,7 +47,8 @@ function loadFilesIndex() {
     var html = "";
     res.search_results.forEach(function (el) {
         console.log(el);
-        html += `  <div class="row">
+        html += `
+                <div class="row">
                     <div class= "col s6 m6 l6 margin-image" >
                             <div class= "slide">
                                 <img class="exper" id="photo`+ el.id + `` + `" src="` + el.listing.thumbnail_url + `">
@@ -59,8 +68,8 @@ function loadFilesIndex() {
                                 <p class="descriptions">`+ el.listing.room_type + ` </p> 
                                 <p class="descriptions"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>`+ el.listing.reviews_count + " " + "Evaluaciones" + ` </p>                            
                             </div>
-                    </div>        
-                    </div>`
+                        </div>  
+                </div>`
 
         $('.experience').html(html);
 
@@ -69,11 +78,19 @@ function loadFilesIndex() {
     })
 }
 
-/* FILTROS OCULTAR - MOSTRAR */
 
-$('#filtros-show').hide();
+/*ON click input borra la clase que contiene las fotos*/
+function onClickInput() {
+    $(".pictures").html("");    
+}
 
-$('#filtros-hide').on('click',function(){
-    $('#filtros-show').show();
+/*BUSCADOR, este busca los elementos en el arreglo y retorna true si lo encontró */
+function findType() {
+    res.search_results.forEach(function (el) {
+        
     
-});
+})
+}
+
+
+

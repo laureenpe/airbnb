@@ -20291,6 +20291,7 @@ $(document).ready(function () {
     loadFilesIndex();
     $("#btn-save").click(saveToLocalStorage); //guarda a local storage
     getFromLocalStorage(); //obtener local storage
+    $('#home').click(onClickInput);//listerne buscador casa
     $('select').material_select();
 
 });
@@ -20298,7 +20299,6 @@ $(document).ready(function () {
 function loadFiles() {
     var html = "";
     res.search_results.forEach(function (el) {
-        console.log(el);
         html += `  
                     <div class= "col s12 m6 l6" >
                             <div class= "slide">
@@ -20327,7 +20327,8 @@ function loadFilesIndex() {
     var html = "";
     res.search_results.forEach(function (el) {
         console.log(el);
-        html += `  <div class="row">
+        html += `
+                <div class="row">
                     <div class= "col s6 m6 l6 margin-image" >
                             <div class= "slide">
                                 <img class="exper" id="photo`+ el.id + `` + `" src="` + el.listing.thumbnail_url + `">
@@ -20347,8 +20348,8 @@ function loadFilesIndex() {
                                 <p class="descriptions">`+ el.listing.room_type + ` </p> 
                                 <p class="descriptions"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>`+ el.listing.reviews_count + " " + "Evaluaciones" + ` </p>                            
                             </div>
-                    </div>        
-                    </div>`
+                        </div>  
+                </div>`
 
         $('.experience').html(html);
 
@@ -20357,14 +20358,21 @@ function loadFilesIndex() {
     })
 }
 
-/* FILTROS OCULTAR - MOSTRAR */
+/*ON click input borra la clase que contiene las fotos*/
+function onClickInput() {
+    $(".pictures").html("");
+}
 
-$('#filtros-show').hide();
-
-$('#filtros-hide').on('click',function(){
-    $('#filtros-show').show();
-    
-});
+/*BUSCADOR, este busca los elementos en el arreglo y retorna true si lo encontró */
+function findType(home) {
+    var result = result.find(function (element) {
+        var r = result.indexOf(home);//En qué posición esta 
+        if (r > -1) { // si la posición es mayor a -1 (-1 xq esto retorna en caso de ser negativo)
+            return true;
+        }
+    });
+    return result;
+}
 var map, places, infoWindow;
       var markers = [];
       var autocomplete;

@@ -3,11 +3,7 @@
 *{
     font-family: $body_font;
 }
-body{
-    
-    
-    
-}
+
 /*Pictures*/
 .pictures{
     position: relative;
@@ -24,7 +20,6 @@ body{
     
 }
 
-
 }
 .slide{
     margin: 0;
@@ -32,17 +27,11 @@ body{
 .fa-heart{
     margin-top: 0;
 }
-.datapictures{
-    fieldset {
-  margin: 1em 0;
-  border: 0;
-  padding: 0;
-  position: relative;
-}
+
 .container-profile{
     position: relative;
-    top: -32px;
-    left: 63%;
+    top: -60px;
+    left: 23%;
 }
 .circl{
     border-radius: 50%;
@@ -87,7 +76,7 @@ a:hover {
 #input_date:focus {
   border-top-color: #0089ec;
 }
-}
+
 .container-flex{
     display: flex;
     fieldset{
@@ -106,10 +95,6 @@ input[type=text]:not(.browser-default) {
     border: none;
     border-radius: 0;
     outline: 0;
-    height: 1rem;
-    width: 300%;
-    font-size: 7px;
-    margin: 0 8px 20px;
     padding: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -117,12 +102,12 @@ input[type=text]:not(.browser-default) {
     box-sizing: content-box;
     -webkit-transition: all .3s;
     transition: all .3s;
+    font-size: 10px;
 }
 .select-wrapper span.caret {
     color: initial;
     position: absolute;
     right: 0px;
-    left: 100%;
     top: 0;
     bottom: 0;
     height: 10px;
@@ -131,7 +116,6 @@ input[type=text]:not(.browser-default) {
     line-height: 10px;
 }
 .input-field {
-  
     left: 13px;
     }
 /*Rooms*/
@@ -211,25 +195,22 @@ div.nav-wrapper{
   width: 170px; 
 }
 nav .input-field label i{
-  color: black;
   margin-top: 20%;
 }
-nav .input-field label.active i {
-    color: black;
-}
-nav ul li a img{
-  margin-top: 35%;
-}
-nav ul a:hover {
-    background-color: white;
-}
+
+
+
 
 /*Hide section*/
 
 /*Map*/
 
 #map {
-        height: 100vh;
+    height: 100vh;
+    z-index: 3;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -242,27 +223,22 @@ nav ul a:hover {
       }
       #map {
         width: 440px;
-        top: 49px;
+        top: 20px;
       }
       #listing {
-        position: absolute;
-        width: 200px;
-        height: 470px;
-        overflow: auto;
-        left: 1258px;
-        top: 53px;
-        cursor: pointer;
-        overflow-x: hidden;
+       
+      position: absolute;
+      width: 200px;
+      height: 612px;
+      overflow: auto;
+      left: 69%;
+      top: 83px;
+      cursor: pointer;
+      overflow-x: hidden;
       }
+      
       #findhotels {
-        position: absolute;
-        text-align: right;
-        width: 100px;
-        font-size: 14px;
-        padding: 4px;
-        z-index: 5;
-        top: 20px;
-        background-color: #fff;
+        
       }
       #locationField {
         font-size: 20px;
@@ -275,20 +251,16 @@ nav ul a:hover {
         background-color: #fff;
       }
       #controls {
-        position: absolute;
-        left:72%;  
-        width: 140px;
-        top: 20px;
         z-index: 5;
         background-color: #fff;
+        padding-left: 20px;
       }
       #autocomplete {
-        width: 100%;
-        font-size: 18px;
-        border: 1px solid black;
+       font-size: 10 px;
       }
       #country {
         width: 100%;
+        border: 0.5px solid gray;
       }
       .placeIcon {
         width: 20px;
@@ -302,6 +274,7 @@ nav ul a:hover {
       #resultsTable {
         border-collapse: collapse;
         width: 240px;
+        left: 20px;
       }
       #rating {
         font-size: 13px;

@@ -14,207 +14,192 @@
 
 <body>
     <!---Here goes navbar-->
+    <nav>
+        <div class="nav-wrapper-fixed">
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="https://www.airbnb.cl/?logo=1" target="_blank"><img src="dist/img/airbnb-logo.png" height="35" alt=""></a></li>
+                <li>
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field" id="findhotels">
+                                <input id="autocomplete" type="search" placeholder="Dónde" required>
+                                <label for="search"><i class="fa fa-search" aria-hidden="true"></i></label>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                
+                
+                <li>
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Inicio" type="text" id="input_from" type="search">
+                                <label for="search"><i class="fa fa-calendar-o" aria-hidden="true"></i> </label>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Regreso" type="text" id="input_to">
+                                <label for="search"><i class="fa fa-calendar-o" aria-hidden="true"></i> </label>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <select>
+                                        <option value="" disabled selected>Huespedes</option>
+                                        <option value="1"> Adulto</option>
+                                        <option value="2">Niños </option>
+                                        <option value="3">Bebés</option>
+                                </select>
+                            </div>
+
+                        </form>
+                    </div>
+
+        </div>
+        </li>
+
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Conviértete en anfitrión</a></li>
+            <li><a href="https://www.airbnb.cl/help" target="_blank">Ayuda</a></li>
+            <li><a href="https://www.airbnb.cl/signup_login" target="_blank">Regístrate</a></li>
+            <li><a href="https://www.airbnb.cl/login" target="_blank">Iniciar sesión</a></li>
+        </ul>
+
+    </nav>
 
     <!--Pictures-->
-    <section class="datapictures">
+    <!--Pictures-->
+    <section>
         <div class="row">
             <div class="col s6 m6 l6 ">
-                <div class="container">
+
+                <div class="row">
+                    <div class="col s7 m7">
+
+                    </div>
+                    <div class="row rooms">
+                        <div class="col s12 m12">
+                            <div class="divider"></div>
+                            <div class=" col s3 m3">
+                                <h6>Tipo de Habitación</h6>
+                                <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="col s3 m3">
+                                <form action="#">
+                                    <p>
+                                        <input type="checkbox" id="test5" />
+                                        <label for="test5"><i class="fa fa-home" aria-hidden="true"></i> <p>Casa Entera</p></label>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="col s3 m3">
+                                <form action="#">
+                                    <p>
+                                        <input type="checkbox" id="test6" />
+                                        <label for="test6"><i class="fa fa-bed" aria-hidden="true"></i> <p>Habitacion Privada</p> </label>
+
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="col s3 m3">
+                                <form action="#">
+                                    <p>
+                                        <input type="checkbox" id="test7" />
+                                        <label for="test7"><i class="fa fa-shower" aria-hidden="true"></i> <p>Habitacion compartida</p>  </label>
+
+
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col s7 m7">
-                            <div class="col s12 m12">
-                                <div class="container-flex ">
-                                    <h6>Fechas</h6>
-                                    <div class="col ">
-                                        <fieldset>
-                                            <input placeholder="Inicio" type="text" id="input_from">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col ">
-                                        <fieldset>
-                                            <input placeholder="Fin" type="text" id="input_to">
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="input-field">
-                                        <select>
-                                            <option value="" disabled selected>Huespedes</option>
-                                            <option value="1"> Adulto</option>
-                                            <option value="2">Niños </option>
-                                            <option value="3">Bebés</option>
-                                            </select>
-                                    </div>
-                                </div>
+                        <div class="col s12 m12">
+                            <div class="divider"></div>
+                            <div class=" col s3 m3">
+                                <h6>Rango de Precios</h6>
                             </div>
-                        </div>
-                        <div class="row rooms">
-                            <div class="col s12 m12">
+                            <div class="col s9 m9">
+                                <form action="#">
+                                    <p class="range-field">
+                                        <input type="range" id="test5" min="6500" max="80000" />
+                                    </p>
+                                </form>
                                 <div class="divider"></div>
-                                <div class=" col s3 m3">
-                                    <h6>Tipo de Habitación</h6>
-                                    <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                </div>
-                                <div class="col s3 m3">
-                                    <form action="#">
-                                        <p>
-                                            <input type="checkbox" id="test5" />
-                                            <label for="test5"><i class="fa fa-home" aria-hidden="true"></i> <p>Casa Entera</p></label>
-                                        </p>
-                                    </form>
-                                </div>
-                                <div class="col s3 m3">
-                                    <form action="#">
-                                        <p>
-                                            <input type="checkbox" id="test6" />
-                                            <label for="test6"><i class="fa fa-bed" aria-hidden="true"></i> <p>Habitacion Privada</p> </label>
-
-                                        </p>
-                                    </form>
-                                </div>
-                                <div class="col s3 m3">
-                                    <form action="#">
-                                        <p>
-                                            <input type="checkbox" id="test7" />
-                                            <label for="test7"><i class="fa fa-shower" aria-hidden="true"></i> <p>Habitacion compartida</p>  </label>
-
-
-                                        </p>
-                                    </form>
-                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <div class="divider"></div>
-                                <div class=" col s3 m3">
-                                    <h6>Rango de Precios</h6>
-                                </div>
-                                <div class="col s9 m9">
-                                    <form action="#">
-                                        <p class="range-field">
-                                            <input type="range" id="test5" min="6500" max="80000" />
-                                        </p>
-                                    </form>
-                                    <div class="divider"></div>
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 ">
+                            <div class=" col s3 m3">
+                                <h6><i class="fa fa-bolt yell" aria-hidden="true"></i> Reserva Inmediata</h6>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m12 ">
-                                <div class=" col s3 m3">
-                                    <h6><i class="fa fa-bolt yell" aria-hidden="true"></i> Reserva Inmediata</h6>
-                                </div>
-                                <div class="col s6 m6 font-size">
-                                    <p>Anuncios que no requieren que el anfitrión acepte la solicitud</p>
-                                </div>
-                                <div class="col s3 m3">
-                                    <!-- Switch -->
-                                    <div class="switch">
-                                        <label>
+                            <div class="col s6 m6 font-size">
+                                <p>Anuncios que no requieren que el anfitrión acepte la solicitud</p>
+                            </div>
+                            <div class="col s3 m3">
+                                <!-- Switch -->
+                                <div class="switch">
+                                    <label>
                                             
                                             <input type="checkbox">on
                                             <span class="lever"></span>
                                             off
                                         </label>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End -->
-                        <div class="row ">
-                            <div class="col s3 m3 l3">
-                                <a class="waves-effect waves-light btn black-text">Filtros</a>
-                                </button>
-                            </div>
-                            <div class="col s8 m8 l8 filteres">
-                                <p>Solo hay un 14% de alojamientos disponible para estas fechas.<br> <span class="bold">Te recomendamos que reserves un alojamiento lo antes posible</span>                                    </p>
-                            </div>
-                            <div class="col s1 m1 l1 calendar">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-
-
-                            </div>
+                    </div>
+                    <!--End -->
+                    <div class="row ">
+                        <div class="col s3 m3 l3">
+                            <a class="waves-effect waves-light btn black-text">Filtros</a>
+                            </button>
                         </div>
-                        <div class="row">
-                            <div class="col s12 m12 l12 ">
-                                <small><i class="fa fa-usd " aria-hidden="true"></i> Pueden aplicarse tarifas e impuestos adicionales</small>
-                            </div>
+                        <div class="col s8 m8 l8 filteres">
+                            <p>Solo hay un 14% de alojamientos disponible para estas fechas.<br> <span class="bold">Te recomendamos que reserves un alojamiento lo antes posible</span>                                </p>
                         </div>
+                        <div class="col s1 m1 l1 calendar">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
 
-                        <!--Hidden section-->
-                        <div class="pictures ">
-                            <!--Here goes the photo created by Js-->
+
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 l12 ">
+                            <small><i class="fa fa-usd " aria-hidden="true"></i> Pueden aplicarse tarifas e impuestos adicionales</small>
+                        </div>
+                    </div>
 
-
-
+                    <!--Hidden section-->
+                    <div class="pictures ">
+                        <!--Here goes the photo created by Js-->
                     </div>
                 </div>
-
-
             </div>
             <div class="col s6 m6 l6">
-                <div class="row">
-                    <div class="col s12 m12 l12">
-                        <div id="findhotels">
-                            Find hotels in:
-
-
-                            <div id="locationField">
-                                <input id="autocomplete" placeholder="Enter a city" type="text" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="controls">
-                        <select id="country">
-                          <option value="all">All</option>
-                          <option value="au">Australia</option>
-                          <option value="br">Brazil</option>
-                          <option value="ca">Canada</option>
-                          <option value="fr">France</option>
-                          <option value="de">Germany</option>
-                          <option value="mx">Mexico</option>
-                          <option value="nz">New Zealand</option>
-                          <option value="it">Italy</option>
-                          <option value="za">South Africa</option>
-                          <option value="es">Spain</option>
-                          <option value="pt">Portugal</option>
-                          <option value="us" selected>U.S.A.</option>
-                          <option value="uk">United Kingdom</option>
-                       </select>
-                    </div>
-                    <div id="map"></div>
-                    
-
-                    <div style="display: none">
-                        <div id="info-content">
-                            <table>
-                                <tr id="iw-url-row" class="iw_table_row">
-                                    <td id="iw-icon" class="iw_table_icon"></td>
-                                    <td id="iw-url"></td>
-                                </tr>
-                                <tr id="iw-address-row" class="iw_table_row">
-                                    <td class="iw_attribute_name">Address:</td>
-                                    <td id="iw-address"></td>
-                                </tr>
-                                <tr id="iw-phone-row" class="iw_table_row">
-                                    <td class="iw_attribute_name">Telephone:</td>
-                                    <td id="iw-phone"></td>
-                                </tr>
-                                <tr id="iw-rating-row" class="iw_table_row">
-                                    <td class="iw_attribute_name">Rating:</td>
-                                    <td id="iw-rating"></td>
-                                </tr>
-                                <tr id="iw-website-row" class="iw_table_row">
-                                    <td class="iw_attribute_name">Website:</td>
-                                    <td id="iw-website"></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+                <div id="map">
+                </div>
+                <div id="listing">
+                    <table id="resultsTable">
+                        <tbody id="results"></tbody>
+                    </table>
                 </div>
             </div>
+
         </div>
     </section>
     <!--Pagination-->
@@ -238,6 +223,10 @@
             <hr>
         </div>
     </section>
+
+    <!--Pagination-->
+
+   
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZz8yPIhZkUVCLCzYucfdq9oB9l4sidXg&callback=initMap&libraries=places"></script>
 
     </script>

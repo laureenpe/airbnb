@@ -31,8 +31,8 @@
                     <div class="nav-wrapper">
                         <form>
                             <div class="input-field">
-                                <input placeholder="Inicio" type="text" id="input_from" type="search">
-                                <label for="search"><i class="fa fa-calendar-o" aria-hidden="true"></i> </label>
+                                <input id="input_from" placeholder="Inicio" type="text"  type="search">
+                                <label  for="search"><i class="fa fa-calendar-o" aria-hidden="true"></i> </label>
                             </div>
                         </form>
                     </div>
@@ -40,7 +40,7 @@
                 <li>
                     <div class="nav-wrapper">
                         <form>
-                            <div class="input-field">
+                            <div class="input-field" >
                                 <input placeholder="Regreso" type="text" id="input_to">
                                 <label for="search"><i class="fa fa-calendar-o" aria-hidden="true"></i> </label>
                             </div>
@@ -50,8 +50,8 @@
                 <li>
                     <div class="nav-wrapper">
                         <form>
-                            <div id="hostages" class="input-field">
-                                <select>
+                            <div  class="input-field">
+                                <select id="hostages">
                                         <option value="" disabled selected>Huespedes</option>
                                         <option value="1"> Adulto</option>
                                         <option value="2">Niños </option>
@@ -90,8 +90,8 @@
                             <div class="col s3 m3">
                                 <form action="#">
                                     <p>
-                                        <input type="checkbox" id="test5" />
-                                        <label for="test5"><i class="fa fa-home" aria-hidden="true"></i> <p>Casa Entera</p></label>
+                                        <input type="checkbox" id="home" />
+                                        <label for="home"><i class="fa fa-home" aria-hidden="true"></i> <p>Casa Entera</p></label>
                                     </p>
                                 </form>
                             </div>
@@ -184,8 +184,8 @@
                 <div id="map">
                 </div>
                 <div id="listing">
-                    <table id="resultsTable">
-                        <tbody id="results"></tbody>
+                    <table  id="resultsTable" >
+                        <tbody class="hide" id="results"></tbody>
                     </table>
                 </div>
             </div>

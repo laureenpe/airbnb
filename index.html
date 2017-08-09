@@ -17,10 +17,7 @@
         <div class="nav-wrapper-fixed">
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="https://www.airbnb.cl/?logo=1" target="_blank"><img src="dist/img/airbnb-logo.png" height="35" alt=""></a></li>
-
-
         </div>
-
         </ul>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="sass.html">Conviértete en anfitrión</a></li>
@@ -31,13 +28,174 @@
 
     </nav>
     <!--content-->
-    
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZz8yPIhZkUVCLCzYucfdq9oB9l4sidXg&callback=initMap&libraries=places"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1 class="textHeaderTitle">Airbnb</h1>
+            </div>
+            <div class="col s4">
+                <h6 class="textTitle">Reserva alojamientos únicos y descubre cada destino como un habitante más.</h6>
+            </div>
+        </div>
+    </div>
+    <!--busqueda-->
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s3">
+                        <input placeholder="Cualquier Lugar" id="autocomplete" type="text" class="validate">
+                        <label for="donde">Dónde</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Inicio" id="input_from" type="text" class="validate">
+                        <label for="cuando">Cuándo?</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input placeholder="Fin" id="input_to" type="text" class="validate">
+                        <label for="cuando">Hasta</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <select>
+                                        <option value="" disabled selected>Huespedes</option>
+                                        <option value="1"> Adulto</option>
+                                        <option value="2">Niños </option>
+                                        <option value="3">Bebés</option>
+                                </select>
+                        <label for="huespedes">Huéspedes</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--btn-->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12 center ">
+                    <a href="pictures.html" class="waves-effect waves-light btn searchButton">Buscar</a>
 
-    </script>
-    <script src="dist/js/all.js">
+                </div>
+            </div>
+        </div>
+        <!--Hide section -->
+        <div class="hide">
+            <div id="map">
+            </div>
+            <div id="listing">
+                <table id="resultsTable">
+                    <tbody id="results"></tbody>
+                </table>
+            </div>
+        </div>
+        <!--header for you-->
+        <section>
+            <div class="container-header">
+                <div class="container-flex">
+                    <a class="header">PARA TI</a>
+                    <a class="header">ALOJAMIENTOS</a>
+                    <a class="header">EXPERIENCIAS</a>
+                    <a class="header">LUGARES</a>
+                </div>
+            </div>
+            <div class="divider">
+            </div>
+            <div class="row">
+                <div class="col s12 l12 m12">
+                    <h4>Experiencias</h4>
+                </div>
+            </div>
+        </section>
+        <!--experiences-->
+        <section class="experiences">
+            <div class="experience container-flex ">
+                <!--Here goes the photo created by Js-->
+            </div>
+        </section>
 
-    </script>
+        <!--footer-->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l3 s12">
+                        <div class="input-field col s12" id="footer-texts">
+                            <select>                   
+                      <option value="" disabled selected>ESPAÑOL </option>
+                      <option value="1">Catalá</option>
+                      <option value="2">English</option>
+                      <option value="3">Italiano</option>
+                    </select>
+                        </div>
+                        <div class="input-field col s12">
+                            <select>
+                    <option value="" disabled selected>USD</option>
+                    <option value="1">CLP</option>
+                    <option value="2">EUR</option>
+                    <option value="3">SEK</option>
+                  </select>
+                        </div>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Airbnb</h5>
+                        <ul>
+                            <li><a class="black-text" href="https://www.airbnb.cl/about/about-us" target="_blank">Sobre nosotros</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/careers" target="_blank">Empleo</a></li>
+                            <li><a class="black-text" href="https://press.atairbnb.com/es/" target="_blank">Prensa</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/help/topic/250/terms---policies" target="_blank">Políticas</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/help?from=footer" target="_blank">Ayuda</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/diversity" target="_blank">Diversidad e inclusion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Airbnb</h5>
+                        <ul>
+                            <li><a class="black-text" href="https://es.airbnb.com/trust" target="_blank">Confianza y seguridad</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/invite?r=6" target="_blank">Crédito de viajero</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/gift?s=footer" target="_blank">Tarjetas de regalo</a></li>
+                            <li><a class="black-text" href="https://www.airbnbcitizen.com/es/" target="_blank">Ciudadano de Airbnb</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/work?s=footer" target="_blank">Viajes de negocios</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/things-to-do" target="_blank">Guías</a></li>
+                            <li><a class="black-text" href="https://airbnbmag.com/" target="_blank">Airbnbmag</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Airbnb</h5>
+                        <ul>
+                            <li><a class="black-text" href="https://www.airbnb.cl/host?from_footer=1">Razones para</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/host?from_footer=1">hospedar</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/hospitality">Hopitalidad</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/help/article/1397/responsible-hosting">Ser un anfitrión</a></li>
+                            <li><a class="black-text" href="https://www.airbnb.cl/help/article/1397/responsible-hosting">responsable</a></li>
+                            <li><a class="black-text" href="https://community.withairbnb.com/t5/Centro-de-la-Comunidad-SP/ct-p/centro-de-la-comunidad"
+                                    target="_blank">Centro de la</a></li>
+                            <li><a class="black-text" href="https://community.withairbnb.com/t5/Centro-de-la-Comunidad-SP/ct-p/centro-de-la-comunidad"
+                                    target="_blank">Comunidad</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container" id="footer-last">
+                    <div class="black-text">
+                        <img src="dist/img/airbnb-logo.png" height="30" alt="">© Airbnb, Inc.
+                    </div>
+                    <div class="right" id="footer-site">
+                        <a class="black-text text-lighten-4" href="https://www.airbnb.cl/terms" target="_blank">Condiciones  </a>
+                        <a class="black-text text-lighten-4" href="https://www.airbnb.cl/terms/privacy_policy" target="_blank">  Privacidad  </a>
+                        <a class="black-text text-lighten-4" href="https://www.airbnb.cl/sitemaps" target="_blank">  Mapa del sitio</a>
+                        <a class="gray social-icon facebook" href="https://www.facebook.com/AirbnbLatam/?brand_redir=324826532457" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="gray white social-icon twitter" href="https://twitter.com/airbnb" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a class="gray social-icon instagram" href="https://www.instagram.com/airbnb/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZz8yPIhZkUVCLCzYucfdq9oB9l4sidXg&callback=initMap&libraries=places"></script>
+
+        </script>
+        <script src="dist/js/all.js">
+
+        </script>
 </body>
 
 </html>

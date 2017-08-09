@@ -20293,6 +20293,13 @@ $(document).ready(function () {
     getFromLocalStorage(); //obtener local storage
     $('#home').click(onClickInput);//listerne buscador casa
     $('select').material_select();
+    /* FILTROS OCULTAR - MOSTRAR */
+    $('#filtros-show').hide();
+
+    $('#filtros-hide').on('click', function () {
+        $('#filtros-show').show();
+
+    });
 
 });
 
@@ -20358,21 +20365,19 @@ function loadFilesIndex() {
     })
 }
 
+
 /*ON click input borra la clase que contiene las fotos*/
 function onClickInput() {
-    $(".pictures").html("");
+    $(".pictures").hide();
+    $(".hides").show();
+    
 }
 
-/*BUSCADOR, este busca los elementos en el arreglo y retorna true si lo encontró */
-function findType(home) {
-    var result = result.find(function (element) {
-        var r = result.indexOf(home);//En qué posición esta 
-        if (r > -1) { // si la posición es mayor a -1 (-1 xq esto retorna en caso de ser negativo)
-            return true;
-        }
-    });
-    return result;
-}
+
+
+
+
+
 var map, places, infoWindow;
       var markers = [];
       var autocomplete;

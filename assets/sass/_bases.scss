@@ -160,7 +160,7 @@ input[type=text]:not(.browser-default) {
 }
 /*Button*/
 .waves-effect {
-    background-color: transparent;
+    
     position: relative;
     border: 0.5px solid #dbdbdb;
     cursor: pointer;
@@ -365,3 +365,20 @@ padding: 10px;
 }
 
 }
+
+/*Filtros Slide*/
+#filtros-show{
+  font-size: 12px;
+}
+[type=checkbox]+label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;}
+
+    .hides{
+      display: none;
+    }

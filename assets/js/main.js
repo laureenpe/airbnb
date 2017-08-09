@@ -5,14 +5,13 @@ $(document).ready(function () {
     getFromLocalStorage(); //obtener local storage
     $('#home').click(onClickInput);//listerne buscador casa
     $('select').material_select();
-  /* FILTROS OCULTAR - MOSTRAR */
+    /* FILTROS OCULTAR - MOSTRAR */
+    $('#filtros-show').hide();
 
-$('#filtros-show').hide();
+    $('#filtros-hide').on('click', function () {
+        $('#filtros-show').show();
 
-$('#filtros-hide').on('click',function(){
-    $('#filtros-show').show();
-    
-});
+    });
 
 });
 
@@ -81,16 +80,12 @@ function loadFilesIndex() {
 
 /*ON click input borra la clase que contiene las fotos*/
 function onClickInput() {
-    $(".pictures").html("");    
+    $(".pictures").hide();
+    $(".hides").show();
+    
 }
 
-/*BUSCADOR, este busca los elementos en el arreglo y retorna true si lo encontró */
-function findType() {
-    res.search_results.forEach(function (el) {
-        
-    
-})
-}
+
 
 
 

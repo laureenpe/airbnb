@@ -1,13 +1,11 @@
 $(document).ready(function () {
     loadFiles();
     loadFilesIndex();
+    $("#btn-save").click(saveToLocalStorage); //guarda a local storage
+    getFromLocalStorage(); //obtener local storage
     $('select').material_select();
 
 });
-
-
-
-
 
 function loadFiles() {
     var html = "";
@@ -33,9 +31,6 @@ function loadFiles() {
 
         $('.pictures').html(html);
         $('.experience').html(html);
-
-
-
     })
 }
 
